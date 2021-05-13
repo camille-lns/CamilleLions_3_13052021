@@ -4,6 +4,23 @@
 /*BASE*/
 /*COMPOSANTS*/
 /*LAYOUTS*/
+* {
+  font-family: "Roboto";
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
 @media screen and (max-width: 767px) {
   header {
     text-align: center;
@@ -14,6 +31,33 @@ h1 {
   font-family: "Shrikhand";
 }
 
+footer {
+  background-color: #353535;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+footer p {
+  font-family: "Shrikhand";
+  font-size: 19px;
+  color: white;
+  margin: 0;
+}
+footer ul {
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 0;
+}
+footer li {
+  padding-bottom: 10px;
+  color: white;
+}
+footer a {
+  color: white;
+}
+footer i {
+  width: 20px;
+}
 /*PAGES*/
 
 /*# sourceMappingURL=style.css.map */
