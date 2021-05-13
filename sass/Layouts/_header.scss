@@ -1,0 +1,9 @@
+header {
+    @include mobile-only {
+        text-align: center;
+    }
+}
+
+h1 {
+    font-family: $title-font;
+}
