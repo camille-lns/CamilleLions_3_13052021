@@ -1,0 +1,16 @@
+.button {
+    background: linear-gradient(175deg, $color-secondary, $color-primary);
+    border: none;
+    padding: 15px 18px;
+    border-radius: 60px;
+    margin-left: 40px;
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        color: white;
+        margin: 0;
+    }
+
+
+}

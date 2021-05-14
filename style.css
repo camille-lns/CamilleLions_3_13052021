@@ -3,6 +3,20 @@
 /*POLICES*/
 /*BASE*/
 /*COMPOSANTS*/
+.button {
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  border: none;
+  padding: 15px 18px;
+  border-radius: 60px;
+  margin-left: 40px;
+}
+.button p {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+}
+
 /*LAYOUTS*/
 * {
   font-family: "Roboto";
@@ -19,6 +33,15 @@ a {
 
 li {
   list-style-type: none;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 300;
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -59,5 +82,14 @@ footer i {
   width: 20px;
 }
 /*PAGES*/
+.city-block {
+  text-align: center;
+}
+
+.first-block h2 {
+  text-align: center;
+  font-size: 24px;
+  width: 70%;
+}
 
 /*# sourceMappingURL=style.css.map */
