@@ -2,28 +2,13 @@
 /*COULEURS*/
 /*POLICES*/
 /*BASE*/
-/*COMPOSANTS*/
-.button {
-  background: linear-gradient(175deg, #FF79DA, #9356DC);
-  border: none;
-  padding: 15px 18px;
-  border-radius: 60px;
-  margin-left: 40px;
-}
-.button p {
-  font-size: 14px;
-  font-weight: 400;
-  color: white;
-  margin: 0;
-}
-
-/*LAYOUTS*/
 * {
   font-family: "Roboto";
+  scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
+img {
+  object-fit: cover;
 }
 
 a {
@@ -41,9 +26,43 @@ h2 {
 
 h3 {
   font-weight: 300;
-  text-align: center;
 }
 
+h4 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/*COMPOSANTS*/
+.button {
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  border: none;
+  padding: 15px 18px;
+  border-radius: 60px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+}
+.button p {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+}
+
+/*LAYOUTS*/
+body {
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
 @media screen and (max-width: 767px) {
   header {
     text-align: center;
@@ -52,13 +71,12 @@ h3 {
 
 h1 {
   font-family: "Shrikhand";
+  margin: 0;
 }
 
 footer {
   background-color: #353535;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 25px;
+  padding: 25px;
 }
 footer p {
   font-family: "Shrikhand";
@@ -83,13 +101,61 @@ footer i {
 }
 /*PAGES*/
 .city-block {
-  text-align: center;
+  background-color: #eaeaea;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.city-block i {
+  width: 25px;
+}
+.city-block p {
+  font-weight: 500;
 }
 
-.first-block h2 {
+.first-block {
+  background-color: #f6f6f6;
+  padding: 40px 35px;
   text-align: center;
+}
+.first-block h2 {
+  margin: 0;
   font-size: 24px;
-  width: 70%;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 25px 20px;
+}
+.restaurants h2 {
+  margin: 25px 0 15px 0;
+}
+.restaurants__box {
+  display: block;
+  position: relative;
+  border-radius: 20px;
+  height: 255px;
+  background-color: white;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+}
+.restaurants__box__texte {
+  padding-top: 20px;
+  padding-left: 15px;
+}
+.restaurants__box__texte h4 {
+  margin-bottom: 5px;
+}
+.restaurants__box__coeur {
+  position: absolute;
+  bottom: 35px;
+  right: 25px;
+}
+.restaurants img {
+  height: 175px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
