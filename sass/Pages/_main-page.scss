@@ -1,5 +1,5 @@
 .city-block {
-    background-color: #eaeaea;
+    background-color: darken($background-light, 5%);
     height: 50px;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@
 
 
 .first-block {
-    background-color: #f6f6f6;
+    background-color: $background-light;
     padding: 40px 35px; 
     text-align: center;
 
@@ -26,8 +26,53 @@
     }
 }
 
+.fonctionnement {
+    padding: 50px 20px;
+
+    h2 {
+        margin: 0 0 35px 0;
+    }
+
+    &__box {
+        box-shadow: 1px 1px 10px rgba(0,0,0,15%);
+        display: flex;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        padding: 25px 30px ;
+        background-color: $background-light;
+        position: relative;
+
+        p {
+            margin: 0;
+            font-weight: 500;
+        }
+
+        i {
+            width: 40px;
+            color: darken($background-light, 50%);
+            padding-top: 2px;
+        }
+
+        &__number {
+            position: absolute;
+            left: -10px;
+            top: 25px;
+            background-color: $color-primary;
+            padding: 4px 8px 4px 8px;
+            border-radius: 100px;
+
+            p {
+                color: white;
+                font-size: 13px;
+                font-weight: 300;
+            }
+        }
+
+    }
+}
+
 .restaurants {
-    background-color: #f6f6f6;
+    background-color: $background-light;
     padding: 25px 20px;
 
     h2 {
@@ -58,6 +103,21 @@
             position: absolute;
             bottom: 35px;
             right: 25px;
+        }
+
+        &__nouveau {
+            background-color: $color-tertiary;
+            position: absolute; 
+            top: 15px; 
+            right: 10px;
+            padding: 10px 12px;
+            border-radius: 5px;
+
+            p {
+                color: $color-tert-dark;
+                font-size: 14px;
+                font-weight: 500;
+            }
         }
     }
 

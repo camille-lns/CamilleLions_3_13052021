@@ -101,7 +101,7 @@ footer i {
 }
 /*PAGES*/
 .city-block {
-  background-color: #eaeaea;
+  background-color: #e9e9e9;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -122,6 +122,44 @@ footer i {
 .first-block h2 {
   margin: 0;
   font-size: 24px;
+}
+
+.fonctionnement {
+  padding: 50px 20px;
+}
+.fonctionnement h2 {
+  margin: 0 0 35px 0;
+}
+.fonctionnement__box {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  padding: 25px 30px;
+  background-color: #f6f6f6;
+  position: relative;
+}
+.fonctionnement__box p {
+  margin: 0;
+  font-weight: 500;
+}
+.fonctionnement__box i {
+  width: 40px;
+  color: #777777;
+  padding-top: 2px;
+}
+.fonctionnement__box__number {
+  position: absolute;
+  left: -10px;
+  top: 25px;
+  background-color: #9356DC;
+  padding: 4px 8px 4px 8px;
+  border-radius: 100px;
+}
+.fonctionnement__box__number p {
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
 }
 
 .restaurants {
@@ -152,6 +190,19 @@ footer i {
   position: absolute;
   bottom: 35px;
   right: 25px;
+}
+.restaurants__box__nouveau {
+  background-color: #99E2D0;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+.restaurants__box__nouveau p {
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
 }
 .restaurants img {
   height: 175px;
