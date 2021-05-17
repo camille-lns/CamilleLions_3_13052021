@@ -62,11 +62,20 @@ header {
   z-index: 2;
   background-color: white;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  height: 60px;
 }
 @media screen and (max-width: 767px) {
   header {
     text-align: center;
   }
+}
+header i {
+  position: absolute;
+  left: 25px;
+  top: 24px;
+}
+header h1 {
+  padding-top: 10px;
 }
 
 h1 {
@@ -99,6 +108,11 @@ footer a {
 footer i {
   width: 20px;
 }
+.first-part img {
+  width: 100%;
+  height: 260px;
+}
+
 /*PAGES*/
 .city-block {
   background-color: #e9e9e9;

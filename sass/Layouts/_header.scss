@@ -4,9 +4,20 @@ header {
     z-index: 2;
     background-color: white;
     box-shadow: 1px 1px 10px rgba(0,0,0,30%);
+    height: 60px;
 
     @include mobile-only {
         text-align: center;
+    }
+
+    i {
+        position: absolute;
+        left: 25px;
+        top: 24px;
+    }
+
+    h1 {
+        padding-top: 10px;
     }
 }
 
