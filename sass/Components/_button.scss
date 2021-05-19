@@ -2,11 +2,13 @@
     background: linear-gradient(175deg, $color-secondary, $color-primary);
     border: none;
     padding: 15px 18px;
+    width: 190px;
     border-radius: 60px;
-    box-shadow: 1px 1px 10px rgba(0,0,0,15%);
+    box-shadow: 1px 1px 10px rgba(0,0,0,20%);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.4s ease-out;
 
     p {
         font-size: 14px;
@@ -15,5 +17,14 @@
         margin: 0;
     }
 
+    &:hover {
+        opacity: 0.75;
+        box-shadow: 0 4px 4px $background-light;
+        cursor: pointer;
+    }
+
+
+
 
 }
+

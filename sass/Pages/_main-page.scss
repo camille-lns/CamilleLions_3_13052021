@@ -53,6 +53,14 @@
             padding-top: 2px;
         }
 
+        &:hover {
+            background-color: lighten($color-primary, 35%);
+            cursor: pointer;
+            i{
+                color: $color-primary;
+            }
+        }
+
         &__number {
             position: absolute;
             left: -10px;

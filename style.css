@@ -41,17 +41,24 @@ p {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   border: none;
   padding: 15px 18px;
+  width: 190px;
   border-radius: 60px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.4s ease-out;
 }
 .button p {
   font-size: 14px;
   font-weight: 400;
   color: white;
   margin: 0;
+}
+.button:hover {
+  opacity: 0.75;
+  box-shadow: 0 4px 4px #f6f6f6;
+  cursor: pointer;
 }
 
 /*LAYOUTS*/
@@ -180,6 +187,7 @@ footer i {
   display: flex;
   align-items: flex-end;
   font-weight: 600;
+  font-size: 14px;
 }
 
 .center {
@@ -236,6 +244,13 @@ footer i {
   width: 40px;
   color: #777777;
   padding-top: 2px;
+}
+.fonctionnement__box:hover {
+  background-color: #f2eafb;
+  cursor: pointer;
+}
+.fonctionnement__box:hover i {
+  color: #9356DC;
 }
 .fonctionnement__box__number {
   position: absolute;
