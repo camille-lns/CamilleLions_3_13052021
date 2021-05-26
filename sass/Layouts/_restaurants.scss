@@ -53,6 +53,10 @@
         }
 
         &__list {
+
+            @include tablet-only {
+                padding: 0 30px;
+            }
             &__box {
                 background-color: white;
                 margin-bottom: 15px;
