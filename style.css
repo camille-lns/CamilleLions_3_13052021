@@ -139,19 +139,63 @@ footer i {
   width: 20px;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
 .first-part img {
   width: 100%;
   height: 260px;
+}
+@media screen and (min-width: 1280px) {
+  .first-part img {
+    display: none;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .first-part img {
+    display: none;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .first-part {
+    width: 70%;
+    margin: -90em auto 2em auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .first-part {
+    width: 70%;
+    max-width: 850px;
+    margin: -90em auto 2em auto;
+  }
 }
 .first-part__name {
   height: 90px;
   border-radius: 50px 50px 0 0;
   position: relative;
-  top: -65px;
-  margin-bottom: -65px;
   background-color: #f6f6f6;
   width: 100%;
   display: flex;
+}
+@media screen and (max-width: 766px) {
+  .first-part__name {
+    top: -65px;
+    margin-bottom: -65px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .first-part__name {
+    margin-bottom: -52px;
+    opacity: 0.9;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .first-part__name {
+    margin-bottom: -52px;
+    opacity: 0.9;
+  }
 }
 .first-part__name h1 {
   font-weight: 500;
@@ -168,6 +212,23 @@ footer i {
 .second-part {
   background-color: #f6f6f6;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .second-part {
+    width: 70%;
+    margin: 20px auto 80px auto;
+    border-radius: 0 0 20px 20px;
+    opacity: 0.9;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .second-part {
+    width: 70%;
+    max-width: 850px;
+    margin: 20px auto 80px auto;
+    border-radius: 0 0 20px 20px;
+    opacity: 0.9;
+  }
 }
 .second-part .part {
   padding: 20px;
@@ -186,6 +247,11 @@ footer i {
   margin: 5px 0 15px 0;
 }
 @media screen and (min-width: 767px) and (max-width: 1279px) {
+  .second-part .part__list {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
   .second-part .part__list {
     padding: 0 30px;
   }
@@ -245,27 +311,144 @@ footer i {
   align-items: center;
 }
 
+.palette-img {
+  background-image: url("../images/palette.jpg");
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  position: relative;
+}
+@media screen and (min-width: 1280px) {
+  .palette-img {
+    height: 95em;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .palette-img {
+    height: 95em;
+  }
+}
+@media screen and (max-width: 766px) {
+  .palette-img {
+    display: none;
+  }
+}
+
+.delice-img {
+  background-image: url("../images/delice.jpg");
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  position: relative;
+}
+@media screen and (min-width: 1280px) {
+  .delice-img {
+    height: 95em;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .delice-img {
+    height: 95em;
+  }
+}
+@media screen and (max-width: 766px) {
+  .delice-img {
+    display: none;
+  }
+}
+
+.francaise-img {
+  background-image: url("../images/francaise.jpg");
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  position: relative;
+}
+@media screen and (min-width: 1280px) {
+  .francaise-img {
+    height: 95em;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .francaise-img {
+    height: 95em;
+  }
+}
+@media screen and (max-width: 766px) {
+  .francaise-img {
+    display: none;
+  }
+}
+
+.enchantee-img {
+  background-image: url("../images/enchantee.jpg");
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  position: relative;
+}
+@media screen and (min-width: 1280px) {
+  .enchantee-img {
+    height: 95em;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .enchantee-img {
+    height: 95em;
+  }
+}
+@media screen and (max-width: 766px) {
+  .enchantee-img {
+    display: none;
+  }
+}
+
 /*PAGES*/
-.city-block {
+.description {
+  background-color: #f6f6f6;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.description__city-block {
   background-color: #e9e9e9;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
-.city-block i {
+.description__city-block i {
   width: 25px;
 }
-.city-block p {
+.description__city-block p {
   font-weight: 500;
 }
-
-.first-block {
-  background-color: #f6f6f6;
+@media screen and (min-width: 1280px) {
+  .description__city-block {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .description__city-block {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  }
+}
+.description__first-block {
   padding: 40px 35px;
   text-align: center;
 }
-.first-block h2 {
+.description__first-block h2 {
   margin: 0;
   font-size: 24px;
 }
@@ -280,6 +463,16 @@ footer i {
 }
 .fonctionnement h2 {
   margin: 0 0 35px 0;
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .fonctionnement h2 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .fonctionnement h2 {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1280px) {
   .fonctionnement .desktop {
@@ -342,14 +535,30 @@ footer i {
   margin: 25px 0 15px 0;
 }
 @media screen and (min-width: 767px) and (max-width: 1279px) {
-  .restaurants {
+  .restaurants h2 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurants h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurants__desktop {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 100px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .restaurants__desktop {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px 0 50px 0px;
-  }
-  .restaurants h2 {
-    margin: 25px 0 25px 0;
   }
 }
 .restaurants__box {
@@ -365,6 +574,11 @@ footer i {
 @media screen and (min-width: 767px) and (max-width: 1279px) {
   .restaurants__box {
     width: 80%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurants__box {
+    width: 40%;
   }
 }
 .restaurants__box__texte {

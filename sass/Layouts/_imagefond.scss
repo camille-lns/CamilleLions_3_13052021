@@ -1,0 +1,95 @@
+.palette-img {
+    background-image: url("../images/palette.jpg");
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+    position: relative;
+    
+
+    @include desktop-only {
+        height: 95em;
+        
+    }
+
+    @include tablet-only {
+        height: 95em; 
+        
+    }
+
+    @include mobile-only {
+        display: none;
+    }
+    
+}
+
+.delice-img {
+    background-image: url("../images/delice.jpg");
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+    position: relative;
+    
+
+    @include desktop-only {
+        height: 95em;
+        
+    }
+
+    @include tablet-only {
+        height: 95em; 
+        
+    }
+
+    @include mobile-only {
+        display: none;
+    }
+    
+}
+
+.francaise-img {
+    background-image: url("../images/francaise.jpg");
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+    position: relative;
+    
+
+    @include desktop-only {
+        height: 95em;
+        
+    }
+
+    @include tablet-only {
+        height: 95em; 
+        
+    }
+
+    @include mobile-only {
+        display: none;
+    }
+    
+}
+
+.enchantee-img {
+    background-image: url("../images/enchantee.jpg");
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+    position: relative;
+    
+
+    @include desktop-only {
+        height: 95em;
+        
+    }
+
+    @include tablet-only {
+        height: 95em; 
+        
+    }
+
+    @include mobile-only {
+        display: none;
+    }
+    
+}
