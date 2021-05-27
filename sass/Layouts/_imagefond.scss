@@ -80,12 +80,10 @@
 
     @include desktop-only {
         height: 95em;
-        
     }
 
     @include tablet-only {
         height: 95em; 
-        
     }
 
     @include mobile-only {
