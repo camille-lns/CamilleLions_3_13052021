@@ -54,7 +54,11 @@
     padding: 50px 20px;
 
     @include tablet-only {
-        padding: 50px 200px;
+        padding: 50px 150px;
+    }
+
+    @include desktop-only {
+        padding: 50px 120px; 
     }
 
     h2 {
@@ -73,8 +77,7 @@
         @include desktop-only {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            align-content: space-between;  
+            justify-content: space-between;
         }
 
     }
@@ -87,10 +90,10 @@
         padding: 25px 30px ;
         background-color: $background-light;
         position: relative;
+        transition: linear 0.2s;
 
         @include desktop-only { 
-            margin-right: 50px;
-            width: 20%;
+            min-width: 20%;
         }
 
         p {
@@ -133,6 +136,14 @@
 .restaurants {
     background-color: $background-light;
     padding: 25px 20px;
+
+    @include desktop-only {
+        padding: 25px 120px;
+    }
+
+    @include tablet-only {
+        padding: 25px 150px;
+    }
     
     h2 {
         margin: 25px 0 15px 0;
@@ -150,9 +161,8 @@
     &__desktop {
         @include desktop-only {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             flex-wrap: wrap;
-            padding: 0 100px;
         }
 
         @include tablet-only {
@@ -173,16 +183,16 @@
         margin-bottom: 20px;
         box-shadow: 1px 1px 10px rgba(0,0,0,15%);
         
-        @include tablet-only {
-            width: 80%;
-        }
 
         @include desktop-only {
             width: 40%;
+            margin-bottom: 3vw;
+        }
+
+        @include tablet-only {
+            margin-bottom: 3vw;
         }
         
-
-
         &__texte {
             padding-top: 20px;
             padding-left: 15px;
