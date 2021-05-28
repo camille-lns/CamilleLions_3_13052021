@@ -4,15 +4,38 @@ footer {
     
     p {
         font-family: $title-font;
-        font-size: 19px;
         color: white;
         margin: 0;
+        font-size: 19px;
+
+        @include desktop-only {
+            display: flex;
+            justify-content: space-around;
+            font-size: 25px;
+            
+        }
+
+        @include tablet-only {
+            display: flex;
+            justify-content: space-around;
+            font-size: 25px;
+        }
     }
 
     ul {
         margin: 0;
         padding-top: 15px;
         padding-left: 0;
+
+        @include desktop-only {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        @include tablet-only {
+            display: flex;
+            justify-content: space-around;
+        }
     }
 
     li {
@@ -22,6 +45,10 @@ footer {
 
     a {
         color: white;
+    }
+
+    a:hover {
+        color: $color-secondary;
     }
 
     i {

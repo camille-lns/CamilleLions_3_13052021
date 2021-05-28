@@ -16,6 +16,10 @@ a {
   color: black;
 }
 
+a:hover {
+  color: #9356DC;
+}
+
 li {
   list-style-type: none;
 }
@@ -107,6 +111,9 @@ header i {
 header h1 {
   padding-top: 10px;
 }
+header a:hover {
+  color: black;
+}
 
 h1 {
   font-family: "Shrikhand";
@@ -119,14 +126,40 @@ footer {
 }
 footer p {
   font-family: "Shrikhand";
-  font-size: 19px;
   color: white;
   margin: 0;
+  font-size: 19px;
+}
+@media screen and (min-width: 1280px) {
+  footer p {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  footer p {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+  }
 }
 footer ul {
   margin: 0;
   padding-top: 15px;
   padding-left: 0;
+}
+@media screen and (min-width: 1280px) {
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 footer li {
   padding-bottom: 10px;
@@ -134,6 +167,9 @@ footer li {
 }
 footer a {
   color: white;
+}
+footer a:hover {
+  color: #FF79DA;
 }
 footer i {
   width: 20px;
@@ -161,14 +197,14 @@ footer i {
 @media screen and (min-width: 767px) and (max-width: 1279px) {
   .first-part {
     width: 70%;
-    margin: -90em auto 2em auto;
+    margin: -87em auto 2em auto;
   }
 }
 @media screen and (min-width: 1280px) {
   .first-part {
     width: 70%;
     max-width: 850px;
-    margin: -90em auto 2em auto;
+    margin: -87em auto 2em auto;
   }
 }
 .first-part__name {
@@ -216,7 +252,7 @@ footer i {
 @media screen and (min-width: 767px) and (max-width: 1279px) {
   .second-part {
     width: 70%;
-    margin: 20px auto 80px auto;
+    margin: 20px auto 110px auto;
     border-radius: 0 0 20px 20px;
     opacity: 0.9;
   }
@@ -225,7 +261,7 @@ footer i {
   .second-part {
     width: 70%;
     max-width: 850px;
-    margin: 20px auto 80px auto;
+    margin: 20px auto 110px auto;
     border-radius: 0 0 20px 20px;
     opacity: 0.9;
   }

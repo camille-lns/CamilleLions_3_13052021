@@ -19,13 +19,13 @@
 
     @include tablet-only {
         width: 70%;
-        margin: -90em auto 2em auto;
+        margin: -87em auto 2em auto;
     }
 
     @include desktop-only {
         width: 70%;
         max-width: 850px;
-        margin: -90em auto 2em auto;
+        margin: -87em auto 2em auto;
     }
 
     &__name { 
@@ -73,7 +73,7 @@
 
     @include tablet-only {
         width: 70%;
-        margin: 20px auto 80px auto;
+        margin: 20px auto 110px auto;
         border-radius: 0 0 20px 20px;
         opacity: 0.9;
     }
@@ -81,7 +81,7 @@
     @include desktop-only {
         width: 70%;
         max-width: 850px;
-        margin: 20px auto 80px auto;
+        margin: 20px auto 110px auto;
         border-radius: 0 0 20px 20px;
         opacity: 0.9;
     }
