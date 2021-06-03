@@ -129,6 +129,8 @@
                 animation-name: apparition; 
                 animation-duration: 1000ms;
                 animation-fill-mode: forwards;
+                text-overflow: ellipsis;
+                
                 &:nth-child(2){
                     animation-delay: 0.2s;
                 }
@@ -146,15 +148,22 @@
                     margin-top: 10px;
                     margin-bottom: 10px;
                     margin-left: 10px;
-
+                    width: 70%;
+                    
                     h4 {
                     margin-bottom: 5px;
                     font-size: 18px;
-                    }
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    } 
 
                     p {
                     font-size: 15px;
                     font-weight: 300;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                     }
                 }
 
@@ -183,7 +192,6 @@
 
                     > .choice {
                         transform: translateX(0em);
-                        width: 60px;
 
                         > .spin {
                             animation-delay: 800ms;

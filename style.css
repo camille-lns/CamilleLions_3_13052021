@@ -305,6 +305,7 @@ footer i {
   animation-name: apparition;
   animation-duration: 1000ms;
   animation-fill-mode: forwards;
+  text-overflow: ellipsis;
 }
 .second-part .part__list__box:nth-child(2) {
   animation-delay: 0.2s;
@@ -321,14 +322,21 @@ footer i {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
+  width: 70%;
 }
 .second-part .part__list__box__text h4 {
   margin-bottom: 5px;
   font-size: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .second-part .part__list__box__text p {
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .second-part .part__list__box__prix {
   font-weight: 600;
@@ -353,7 +361,6 @@ footer i {
 }
 .second-part .part__list__box:hover > .choice {
   transform: translateX(0em);
-  width: 60px;
 }
 .second-part .part__list__box:hover > .choice > .spin {
   animation-delay: 800ms;
