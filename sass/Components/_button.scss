@@ -19,7 +19,7 @@
 
     &:hover {
         opacity: 0.75;
-        box-shadow: 0 4px 4px $background-light;
+        box-shadow: 1px 1px 10px rgba(0,0,0,50%);
         cursor: pointer;
     }
 }

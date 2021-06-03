@@ -124,7 +124,7 @@
                 box-shadow: 1px 1px 10px rgba(0,0,0,10%);
                 display: flex;
                 justify-content: space-between;
-                
+                overflow: hidden;
                 opacity: 0; 
                 animation-name: apparition; 
                 animation-duration: 1000ms;
@@ -159,12 +159,11 @@
                 }
 
                 &__prix {
-                    display: flex;
-                    align-items: flex-end;
                     font-weight: 600; 
                     font-size: 14px;
+                    display: flex;
+                    align-items: flex-end;
                     margin-bottom: 10px;
-                    margin-right: 10px;
                 }
 
                 &__selection {
@@ -175,11 +174,29 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    transition: 400ms ease-in-out;
+                    transform: translateX(4em);
+                }
+
+                &:hover {
+                    cursor: pointer;
+
+                    > .choice {
+                        transform: translateX(0em);
+                        width: 60px;
+
+                        > .spin {
+                            animation-delay: 800ms;
+                            animation: spin-animation 0.8s forwards;
+                        }
+                    }
                 }
             }
         }
     }
 }
+
+
 
 @keyframes apparition {
     from {
@@ -194,4 +211,13 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+
+@keyframes spin-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
 }
