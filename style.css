@@ -297,7 +297,6 @@ footer i {
   background-color: white;
   margin-bottom: 15px;
   border-radius: 20px;
-  padding: 10px 10px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
@@ -318,6 +317,9 @@ footer i {
 .second-part .part__list__box__text {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 .second-part .part__list__box__text h4 {
   margin-bottom: 5px;
@@ -332,6 +334,17 @@ footer i {
   align-items: flex-end;
   font-weight: 600;
   font-size: 14px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.second-part .part__list__box__selection {
+  background-color: #99E2D0;
+  color: white;
+  width: 60px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes apparition {
