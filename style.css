@@ -68,6 +68,7 @@ p {
 .far {
   transition: 0.5s;
   z-index: 1;
+  position: absolute;
 }
 
 .fas.fa-heart {
@@ -209,7 +210,7 @@ footer i {
   .first-part {
     width: 70%;
     max-width: 850px;
-    margin: -85em auto 8em auto;
+    margin: -85em auto 5em auto;
   }
 }
 @media screen and (max-width: 766px) {
@@ -753,7 +754,7 @@ footer i {
   }
 }
 .restaurants__box__texte {
-  padding-top: 20px;
+  padding-top: 15px;
   padding-left: 15px;
 }
 .restaurants__box__texte h4 {
@@ -761,8 +762,8 @@ footer i {
 }
 .restaurants__box__coeur {
   position: absolute;
-  bottom: 35px;
-  right: 25px;
+  bottom: 55px;
+  right: 45px;
 }
 .restaurants__box__nouveau {
   background-color: #99E2D0;
