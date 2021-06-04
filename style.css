@@ -202,14 +202,14 @@ footer i {
 @media screen and (min-width: 767px) and (max-width: 1279px) {
   .first-part {
     width: 70%;
-    margin: -90em auto 8em auto;
+    margin: -85em auto 8em auto;
   }
 }
 @media screen and (min-width: 1280px) {
   .first-part {
     width: 70%;
     max-width: 850px;
-    margin: -90em auto 8em auto;
+    margin: -85em auto 8em auto;
   }
 }
 @media screen and (max-width: 766px) {
