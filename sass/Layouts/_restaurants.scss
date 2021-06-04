@@ -17,28 +17,36 @@
         }
     }
 
+    background-color: $background-light;
+    border-radius: 50px 50px 50px 50px;
+    opacity: 0.9;
+
     @include tablet-only {
         width: 70%;
-        margin: -87em auto 2em auto;
+        margin: -90em auto 8em auto;
     }
 
     @include desktop-only {
         width: 70%;
         max-width: 850px;
-        margin: -87em auto 2em auto;
+        margin: -90em auto 8em auto;
+    }
+
+    @include mobile-only {
+        border-radius: 50px 50px 0px 0px;
     }
 
     &__name { 
         height: 90px;
-        border-radius: 50px 50px 0 0;
         position: relative;
-        background-color: $background-light;
         width: 100%;
         display: flex;
 
         @include mobile-only {
             top: -65px;
             margin-bottom: -65px;
+            background-color: $background-light;
+            border-radius: 50px 50px 0px 0px;
         }
 
         @include tablet-only {
@@ -66,7 +74,7 @@
     }
 }
 
-.second-part {
+/*.second-part {
     background-color: $background-light;
     padding-bottom: 60px;
     
@@ -84,17 +92,29 @@
         margin: 20px auto 110px auto;
         border-radius: 0 0 20px 20px;
         opacity: 0.9;
-    }
+    }*/
     
 
     .part {
         padding: 20px;
+        
+        @include desktop-only {
+            padding: 20px 20px 20px 20px;
+        }
+
+        @include tablet-only {
+            padding: 40px 20px 0px 20px;
+        }
 
         &__titre {
             h3 {
                 text-transform: uppercase;
                 margin: 0;
                 font-size: 18px;
+
+                @include desktop-only {
+                    padding-top: 20px;
+                }
             
                 &:after {
                     content: '';
@@ -202,7 +222,7 @@
             }
         }
     }
-}
+
 
 
 
@@ -219,6 +239,12 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    @include mobile-only {
+        padding-bottom: 85px;
+    }
 }
 
 @keyframes spin-animation {

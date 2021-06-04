@@ -15,10 +15,6 @@
         i {
             width: 25px;
         }
-        
-        p {
-            font-weight: 500;
-        }
 
         @include desktop-only {
             width: 50%;
@@ -40,7 +36,7 @@
     }
 
     &__first-block {
-        padding: 40px 35px; 
+        padding: 40px 35px 10px 35px; 
         text-align: center;
     
         h2 {
@@ -48,6 +44,22 @@
             font-size: 24px;
         } 
     }
+}
+
+.ville {
+    border: none;
+    background-color: darken($background-light, 5%);
+    font-weight: 500;
+    font-size: 1em;
+    width: 120px;
+}
+
+.button__center {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .fonctionnement {
