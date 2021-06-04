@@ -22,8 +22,8 @@
 		display: inline-block;
 		margin: 0 5px;
 		color: lighten($color-primary,15%);
-    font-family: $title-font;
-    font-size: 40px;
+    	font-family: $title-font;
+    	font-size: 40px;
 
 		@for $i from 0 through 7 {
 			&:nth-child(#{$i + 1}) {

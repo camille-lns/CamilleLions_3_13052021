@@ -165,9 +165,7 @@
                 &__text {
                     display: flex;
                     flex-direction: column;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                    margin-left: 10px;
+                    padding: 10px 0px 10px 10px;
                     width: 70%;
                     
                     h4 {
@@ -193,24 +191,40 @@
                     display: flex;
                     align-items: flex-end;
                     margin-bottom: 10px;
+                    margin-right: 10px;
+                    transition: 400ms ease-in-out;
+                    transform: translateX(60px);
+                    
+                    @include tablet-only {
+                    width: 30%;
+                    justify-content: flex-end;
+                    padding-right: 20px;
+                    }
+
+                    @include desktop-only {
+                        width: 30%;
+                        justify-content: flex-end;
+                        padding-right: 20px;
+                        }
                 }
 
                 &__selection {
                     background-color: $color-tertiary;
                     color: white; 
-                    width: 60px;
                     border-radius: 0 20px 20px 0;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     transition: 400ms ease-in-out;
-                    transform: translateX(4em);
+                    transform: translateX(60px);
+                    padding-left: 18px;
+                    padding-right: 18px;
                 }
 
                 &:hover {
-                    cursor: pointer;
+                    cursor: pointer; 
 
-                    > .choice {
+                    > .choice, .part__list__box__prix {
                         transform: translateX(0em);
 
                         > .spin {

@@ -5,6 +5,8 @@
 * {
   font-family: "Roboto";
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -342,9 +344,7 @@ footer i {
 .part__list__box__text {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
+  padding: 10px 0px 10px 10px;
   width: 70%;
 }
 .part__list__box__text h4 {
@@ -367,25 +367,43 @@ footer i {
   display: flex;
   align-items: flex-end;
   margin-bottom: 10px;
+  margin-right: 10px;
+  transition: 400ms ease-in-out;
+  transform: translateX(60px);
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .part__list__box__prix {
+    width: 30%;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .part__list__box__prix {
+    width: 30%;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
 }
 .part__list__box__selection {
   background-color: #99E2D0;
   color: white;
-  width: 60px;
   border-radius: 0 20px 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 400ms ease-in-out;
-  transform: translateX(4em);
+  transform: translateX(60px);
+  padding-left: 18px;
+  padding-right: 18px;
 }
 .part__list__box:hover {
   cursor: pointer;
 }
-.part__list__box:hover > .choice {
+.part__list__box:hover > .choice, .part__list__box:hover .part__list__box__prix {
   transform: translateX(0em);
 }
-.part__list__box:hover > .choice > .spin {
+.part__list__box:hover > .choice > .spin, .part__list__box:hover .part__list__box__prix > .spin {
   animation-delay: 800ms;
   animation: spin-animation 0.8s forwards;
 }
