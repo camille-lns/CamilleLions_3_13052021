@@ -388,6 +388,16 @@ footer i {
     padding-right: 20px;
   }
 }
+@media screen and (max-width: 766px) {
+  .part__list__box__prix {
+    transform: translateX(50px);
+  }
+}
+@media screen and (max-width: 400px) {
+  .part__list__box__prix {
+    transform: translateX(3vw);
+  }
+}
 .part__list__box__selection {
   background-color: #99E2D0;
   color: white;
@@ -404,7 +414,7 @@ footer i {
   cursor: pointer;
 }
 .part__list__box:hover > .choice, .part__list__box:hover .part__list__box__prix {
-  transform: translateX(0em);
+  transform: translateX(0px);
 }
 .part__list__box:hover > .choice > .spin, .part__list__box:hover .part__list__box__prix > .spin {
   animation-delay: 800ms;
