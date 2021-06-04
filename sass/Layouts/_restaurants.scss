@@ -166,6 +166,7 @@
                     display: flex;
                     flex-direction: column;
                     padding: 10px 0px 10px 10px;
+                    transition: 400ms ease-in-out;
                     width: 70%;
                     
                     h4 {
@@ -182,6 +183,11 @@
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
+                    }
+
+                    @include mobile-only {
+                        width: calc(70% + 60px);
+                        
                     }
                 }
 
@@ -230,6 +236,12 @@
                         > .spin {
                             animation-delay: 800ms;
                             animation: spin-animation 0.8s forwards;
+                        }
+                    }
+
+                    > .part__list__box__text {
+                        @include mobile-only {
+                            width: 70%;
                         }
                     }
                 }
