@@ -72,28 +72,7 @@
             top: 40px;
         }
     }
-}
-
-/*.second-part {
-    background-color: $background-light;
-    padding-bottom: 60px;
-    
-
-    @include tablet-only {
-        width: 70%;
-        margin: 20px auto 110px auto;
-        border-radius: 0 0 20px 20px;
-        opacity: 0.9;
-    }
-
-    @include desktop-only {
-        width: 70%;
-        max-width: 850px;
-        margin: 20px auto 110px auto;
-        border-radius: 0 0 20px 20px;
-        opacity: 0.9;
-    }*/
-    
+}    
 
     .part {
         padding: 20px;

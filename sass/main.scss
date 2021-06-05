@@ -1,23 +1,18 @@
-/*UTILS*/
+
 @import "./Utils/variables";
 @import "./Utils/mixin";
 
-/*BASE*/
 @import "./Base/base-reset";
 
-/*COMPOSANTS*/
 @import "./Components/button";
 @import "./Components/heart";
 
-/*LAYOUTS*/
 @import "./Layouts/body";
 @import "./Layouts/header";
 @import "./Layouts/footer";
 @import "./Layouts/restaurants";
 @import "./Layouts/imagefond";
 
-
-/*PAGES*/
 @import "./Pages/main-page"; 
 @import "./Pages/loading";
 
