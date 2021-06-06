@@ -59,11 +59,12 @@
             opacity: 0.9;
         }
 
-        h1 {
+        p {
             font-weight: 500;
             font-size: 26px;
             margin-top: 30px;
             margin-left: 20px;
+            font-family: $title-font;
         }
 
         i {

@@ -238,11 +238,12 @@ footer i {
     opacity: 0.9;
   }
 }
-.first-part__name h1 {
+.first-part__name p {
   font-weight: 500;
   font-size: 26px;
   margin-top: 30px;
   margin-left: 20px;
+  font-family: "Shrikhand";
 }
 .first-part__name i {
   position: absolute;
